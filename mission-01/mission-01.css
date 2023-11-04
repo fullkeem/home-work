@@ -1,0 +1,88 @@
+:root {
+  --base-width: 502px;
+  --base-border: #c4c4c4;
+  --base-white: #fff;
+  --base-btn: #ccc;
+  --base-blue: #0074e9;
+}
+
+/* 공통 속성 */
+.btn,
+.purchase {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  padding: 0;
+  border: none;
+}
+
+.btn a,
+.btn img {
+  display: block;
+}
+
+h2 {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: var(--base-width);
+  height: 100vh;
+  background: #f5f5f5;
+}
+
+.container {
+  width: inherit;
+}
+
+.ottogi {
+  position: relative;
+  margin-bottom: 16px;
+  height: 310px;
+  background: var(--base-white);
+  border: 1px solid var(--base-border);
+}
+
+.ottogi-container {
+  height: inherit;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.bottom-boxes {
+  display: flex;
+  justify-content: space-between;
+}
+
+.kamill,
+.gomgom {
+  position: relative;
+  width: 243px;
+  height: 310px;
+  background: var(--base-white);
+  border: 1px solid var(--base-border);
+}
+
+.kamill-box,
+.gomgom-box {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.purchase {
+  width: 112px;
+  height: 42px;
+  background: var(--base-blue);
+  color: var(--base-white);
+  font-size: 14px;
+  line-height: 1.2rem;
+}
+
+.purchase span {
+  margin-right: 10px;
+}
