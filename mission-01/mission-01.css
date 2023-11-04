@@ -115,15 +115,16 @@ body {
   line-height: 1.2rem;
 }
 
-.purchase span {
-  margin-right: 10px;
+.purchase a {
+  color: inherit;
+  text-decoration: none;
 }
 
 .btn-box a {
   display: block;
 }
 
-.btn-box img {
+.btn-box .angle {
   width: inherit;
   height: inherit;
 }
