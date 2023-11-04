@@ -7,7 +7,7 @@
 }
 
 /* 공통 속성 */
-.btn,
+.btn-box,
 .purchase {
   position: absolute;
   bottom: 20px;
@@ -16,8 +16,15 @@
   border: none;
 }
 
-.btn a,
-.btn img {
+@keyframes moveEffect {
+  from {
+  }
+  to {
+  }
+}
+
+.btn-box a,
+.btn-box img {
   display: block;
 }
 
