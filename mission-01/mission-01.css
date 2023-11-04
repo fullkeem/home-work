@@ -1,3 +1,5 @@
+@import "./normalize.css";
+
 :root {
   --base-width: 502px;
   --base-border: #c4c4c4;
@@ -6,12 +8,20 @@
   --base-blue: #0074e9;
 }
 
+*,
+*:before,
+*::after {
+  box-sizing: border-box;
+}
+
 /* 공통 속성 */
 .btn-box,
 .purchase {
   position: absolute;
   bottom: 20px;
   left: 20px;
+  width: 42px;
+  height: 42px;
   padding: 0;
   border: none;
 }
@@ -21,11 +31,6 @@
   }
   to {
   }
-}
-
-.btn-box a,
-.btn-box img {
-  display: block;
 }
 
 h2 {
@@ -44,6 +49,12 @@ body {
 
 .container {
   width: inherit;
+}
+
+.ottogi:hover,
+.kamill:hover,
+.gomgom:hover {
+  border: 1px solid var(--base-blue);
 }
 
 .ottogi {
@@ -106,4 +117,13 @@ body {
 
 .purchase span {
   margin-right: 10px;
+}
+
+.btn-box a {
+  display: block;
+}
+
+.btn-box img {
+  width: inherit;
+  height: inherit;
 }
