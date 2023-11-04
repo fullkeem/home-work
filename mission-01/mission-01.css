@@ -49,9 +49,23 @@ body {
 
 .ottogi-container {
   height: inherit;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+}
+
+.box {
+  position: absolute;
+  top: 70px;
+  left: 70px;
+  text-align: center;
+}
+
+.box > img {
+  margin-bottom: 20px;
+}
+
+.ottogi-container > img {
+  position: absolute;
+  top: 20px;
+  right: 30px;
 }
 
 .bottom-boxes {
