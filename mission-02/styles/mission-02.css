@@ -1,0 +1,9 @@
+@import "./common.css";
+@import "./reset.css";
+
+.sign-in {
+  margin: 0 auto;
+  width: 1440px;
+  height: 850px;
+  background: url(../assets/login-bg.svg) center/cover no-repeat;
+}
