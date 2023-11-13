@@ -1,12 +1,27 @@
 @import "./common.css";
 @import "./reset.css";
 
-.sign-in {
-  flex-flow: column nowrap;
+:root {
+  --primary-blue: #24388d;
+  --primary-white: #fefefe;
+  --primary-gray: #f5f5f5;
+}
+
+.sign-in-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 0 auto;
-  max-width: 1440px;
-  height: 850px;
+  max-inline-size: 1440px;
+  min-block-size: 100vh;
   background: url(../assets/login-bg.png) center/cover no-repeat;
+}
+
+.sign-in {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column nowrap;
   color: #fff;
 }
 
@@ -22,10 +37,130 @@
 }
 
 .subtitle-ko {
+  margin-bottom: 80px;
   font-size: 0.75rem;
   font-weight: 300;
 }
 
+/* form */
 .form-inner {
+  display: flex;
   flex-flow: column nowrap;
+  inline-size: 540px;
+}
+
+.email-box,
+.password-box {
+  position: relative;
+  inline-size: inherit;
+}
+
+.password-box {
+  margin: 30px 0 10px 0;
+}
+
+.email-box input,
+.password-box input {
+  inline-size: inherit;
+  block-size: 57px;
+  padding: 10px 0 0 10px;
+  border: none;
+  background: none;
+  border-bottom: 1px solid var(--primary-white);
+  opacity: 0.75;
+  outline-color: var(--primary-blue);
+  color: var(--primary-white);
+}
+
+.email-box input:focus,
+.password-box input:focus {
+  opacity: 1;
+  border: 5px solid var(--primary-blue);
+  border-radius: 5px;
+  outline: none;
+}
+
+.email-box label,
+.password-box label {
+  position: absolute;
+  left: 10px;
+  bottom: 8px;
+  transition: all 0.2s;
+}
+
+.email-box input:focus ~ label,
+.email-box input:valid ~ label,
+.password-box input:focus ~ label,
+.password-box input:valid ~ label {
+  font-size: 12px;
+  bottom: 35px;
+}
+
+.email-save {
+  padding-top: 10px;
+  align-self: flex-start;
+}
+
+input[type="checkbox"] {
+  margin: 0;
+  display: none;
+}
+
+input[type="checkbox"] + label::before {
+  content: " ";
+  display: inline-block;
+  margin-right: 5px;
+  inline-size: 1rem;
+  block-size: 1rem;
+  border: 1px solid var(--primary-white);
+  border-radius: 3px;
+  vertical-align: middle;
+}
+
+input[type="checkbox"]:checked + label::before {
+  content: "";
+  padding: none;
+  background: url(../assets/checked.svg) 100% 100% / cover;
+  border: 2px solid var(--primary-blue);
+}
+
+/* button */
+
+.btn-box {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  line-height: 1;
+}
+
+.sign-in-btn,
+.sign-up-btn {
+  position: relative;
+  inline-size: 260px;
+  block-size: 48px;
+  border: 1px solid var(--primary-gray);
+  border-radius: 8px;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.sign-in-btn {
+  background-color: var(--primary-white);
+  color: var(--primary-gray);
+}
+
+.sign-up-btn {
+  background: none;
+  color: var(--primary-white);
+  opacity: 0.75;
+}
+
+.btn-box > button::after {
+  background: url(../assets/arrow.svg) 100% 100%;
+  content: "";
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  inline-size: 14px;
+  block-size: 14px;
 }

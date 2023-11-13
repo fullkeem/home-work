@@ -11,26 +11,38 @@
       href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css"
     />
     <link rel="stylesheet" href="./styles/mission-02.css" />
+    <script src="./js/signin.js" defer></script>
   </head>
   <body>
-    <section class="sign-in flex-center">
-      <h1 class="title">로그인</h1>
-      <h2 class="subtitle-en">Welcome, Ediya Coffee</h2>
-      <h2 class="subtitle-ko">이디야커피에 오신 것을 환영합니다.</h2>
-      <form action="">
-        <div class="form-inner flex-center">
-          <input type="email" placeholder="이메일" />
-          <input type="password" placeholder="비밀번호" />
-          <div>
-            <label for="save">이메일 저장</label>
-            <input type="checkbox" id="save" />
+    <div class="sign-in-container ">
+      <section class="sign-in">
+        <h1 class="title">로그인</h1>
+        <h2 class="subtitle-en">Welcome, Ediya Coffee</h2>
+        <h2 class="subtitle-ko">이디야커피에 오신 것을 환영합니다.</h2>
+        <form method="get" action="/" id="sign-in-form">
+          <div class="form-inner">
+            <div class="email-box">
+              <input type="email" id="email" name="user-email" required />
+              <label for="email">이메일</label>
+            </div>
+            <div class="password-box">
+              <input type="password" id="pwd" name="user-password" required />
+              <label for="pwd">비밀번호</label>
+              <span class="pwd-error"
+                >패스워드는 숫자, 영어 조합 6자 이상 입력해야 합니다.</span
+              >
+            </div>
+            <div class="email-save">
+              <input type="checkbox" id="save" />
+              <label for="save">이메일 저장</label>
+            </div>
           </div>
-        </div>
-        <div>
-          <button type="submit">로그인</button>
-          <button type="submit">회원가입</button>
-        </div>
-      </form>
-    </section>
+          <div class="btn-box">
+            <button class="sign-in-btn" type="submit">로그인</button>
+            <button class="sign-up-btn" type="submit">회원가입</button>
+          </div>
+        </form>
+      </section>
+    </div>
   </body>
 </html>

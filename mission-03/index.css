@@ -1,0 +1,10 @@
+body {
+  block-size: 100vh;
+}
+
+div {
+  inline-size: 100%;
+  block-size: 100%;
+  background-image: url(./assets/bg_large.svg);
+  background-size: cover;
+}
