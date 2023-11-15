@@ -1,10 +1,22 @@
+:root {
+  --font-white: #fff;
+  --font-gray-1: #c8c8c8;
+  --font-gray-2: #acacac;
+  --font-gray-3: #919191;
+  --font-gray-4: #757575;
+  --divider: #2f2f2f;
+  --bg-black: #010101;
+  --primary-red: #e50914;
+}
+
 body {
   block-size: 100vh;
 }
 
-div {
+.netflix-container {
   inline-size: 100%;
   block-size: 100%;
-  background-image: url(./assets/bg_large.svg);
-  background-size: cover;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 100%),
+    url(./assets/bg_large.svg), lightgray 50% / cover no-repeat;
+  color: var(--font-white);
 }
