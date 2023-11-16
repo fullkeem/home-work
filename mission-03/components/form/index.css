@@ -1,0 +1,62 @@
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.register-form {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.email-input {
+  width: 33.75em;
+  height: 3.75em;
+  padding: 1.125em 1.25em;
+  font-weight: 400;
+  color: var(--font-gray-4);
+}
+
+.free-btn {
+  display: flex;
+  width: 9.545em;
+  height: 2.727em;
+  padding: 0.682em 0.909em;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--primary-red-1);
+  color: var(--font-white);
+  text-decoration: none;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+@media (max-width: 768px) {
+  .register-form {
+    display: flex;
+    height: 5.75em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75em;
+  }
+
+  .email-input {
+    width: 17.5em;
+    height: 2.857em;
+    padding: 0.714em 1.429em;
+    font-size: 14px;
+    border-radius: 30px;
+  }
+
+  .free-btn {
+    width: 11.429em;
+    height: 2.857em;
+    padding: 1.071em 1.429em;
+    border-radius: 30px;
+    font-size: 14px;
+  }
+}
