@@ -1,0 +1,46 @@
+.toggle-container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.selected {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  column-gap: 0.5em;
+  width: 7.188em;
+  height: 2.688em;
+  padding: 0.75em 0.625em;
+  background: transparent;
+  border: 1px solid #757575;
+  border-radius: 2px;
+  color: #757575;
+  cursor: pointer;
+}
+
+.select-box {
+  margin-block-start: 1px;
+  width: 7.188em;
+  padding: 2px;
+  border: 1px solid #757575;
+  border-radius: 2px;
+  display: none;
+}
+
+.select-box.is--active {
+  display: block;
+}
+
+li {
+  width: 100%;
+  padding: 2px;
+  text-align: center;
+  color: #757575;
+}
+
+li:hover {
+  background: #c8c8c8;
+}

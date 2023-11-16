@@ -9,10 +9,23 @@
       rel="stylesheet"
       type="text/css"
     />
-    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../../../styles/style.css" />
     <link rel="stylesheet" href="./index.css" />
+    <script src="./toggle.js" defer></script>
   </head>
   <body>
-    <div class="netflix-container"></div>
+    <div class="toggle-container">
+      <div class="select-lang">
+        <button type="button" class="selected">
+          <img src="./../../assets/global-icon.svg" alt="" />
+          <span class="lang">한국어</span>
+          <img src="./../../assets/down-icon.svg" alt="" />
+        </button>
+        <ul class="select-box is-active">
+          <li class="option">한국어</li>
+          <li class="option">English</li>
+        </ul>
+      </div>
+    </div>
   </body>
 </html>
