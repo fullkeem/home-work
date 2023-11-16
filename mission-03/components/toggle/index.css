@@ -21,6 +21,12 @@
   cursor: pointer;
 }
 
+@media (max-width: 768px) {
+  .selected {
+    height: 1.875em;
+  }
+}
+
 .select-box {
   margin-block-start: 1px;
   width: 7.188em;

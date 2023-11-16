@@ -1,3 +1,15 @@
+:root {
+  --font-white: #fff;
+  --font-gray-1: #c8c8c8;
+  --font-gray-2: #acacac;
+  --font-gray-3: #919191;
+  --font-gray-4: #757575;
+  --divider: #2f2f2f;
+  --bg-black: #010101;
+  --primary-red-1: #e50914;
+  --primary-red-2: #b70710;
+}
+
 body {
   font-family: "Spoqa Han Sans Neo", "SUIT Variable", Arial, Helvetica,
     sans-serif;

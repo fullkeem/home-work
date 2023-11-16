@@ -1,8 +1,49 @@
 .header-box {
   display: flex;
   /* inline-size: 105em; */
-  block-size: 8.75em;
-  padding: 40px 200px;
+  block-size: 6.25em;
+  padding: 1.25em;
   justify-content: space-between;
   align-items: center;
+}
+
+.netflix-logo {
+  inline-size: 8.75em;
+  block-size: 2.375em;
+}
+
+.select-signin-box {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: end;
+}
+
+.signin-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  inline-size: 4.375em;
+  height: 2.6em;
+  margin-inline-start: 1.5em;
+  border-radius: 4px;
+  background: var(--primary-red-1);
+  color: var(--font-white);
+  font-weight: 700;
+}
+
+.signin-btn:hover {
+  background: var(--primary-red-2);
+}
+
+@media (max-width: 768px) {
+  .netflix-logo {
+    inline-size: 5em;
+    block-size: 1.375em;
+  }
+
+  .signin-btn {
+    font-size: 12px;
+    inline-size: 5em;
+    block-size: 2.5em;
+  }
 }
