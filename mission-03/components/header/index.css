@@ -1,0 +1,8 @@
+.header-box {
+  display: flex;
+  /* inline-size: 105em; */
+  block-size: 8.75em;
+  padding: 40px 200px;
+  justify-content: space-between;
+  align-items: center;
+}
