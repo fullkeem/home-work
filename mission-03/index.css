@@ -22,7 +22,7 @@ body {
 .netflix-container {
   inline-size: 100%;
   block-size: 100%;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 100%),
-    url(./assets/bg_large.svg), lightgray 50% / cover no-repeat;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, #000 100%),
+    url(./assets/bg_large.svg), lightgray 500% / cover no-repeat;
   color: var(--font-white);
 }

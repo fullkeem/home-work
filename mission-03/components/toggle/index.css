@@ -30,7 +30,7 @@
   display: none;
 }
 
-.select-box.is--active {
+.select-box.active {
   display: block;
 }
 
