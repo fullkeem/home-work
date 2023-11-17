@@ -28,12 +28,13 @@
 }
 
 .select-box {
+  display: none;
+  position: absolute;
   margin-block-start: 1px;
   width: 7.188em;
   padding: 2px;
   border: 1px solid #757575;
   border-radius: 2px;
-  display: none;
 }
 
 .select-box.active {

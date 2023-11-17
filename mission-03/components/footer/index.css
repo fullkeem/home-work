@@ -1,0 +1,57 @@
+.footer {
+  display: flex;
+  flex-flow: column wrap;
+  background: var(--bg-black);
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 3.125em 9.375em;
+}
+
+.footer-wrapper em {
+  color: var(--font-gray-1);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: -0.01px;
+}
+
+.grid-link {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 3.75em;
+  grid-row-gap: 1em;
+  inline-size: 62.5em;
+  block-size: 7.75em;
+  margin-block-start: 3.125em;
+  color: var(--font-gray-2);
+}
+
+.select-lang {
+  margin-block-start: 2.875em;
+}
+
+.company-text {
+  margin-block-start: 1.25em;
+}
+
+.company-text {
+  color: var(--font-gray-2);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.address {
+  margin-block-start: 1.25em;
+  line-height: 1.7;
+  font-style: normal;
+  font-weight: 600;
+  color: var(--font-gray-3);
+}
+
+@media (max-width: 768px) {
+}
