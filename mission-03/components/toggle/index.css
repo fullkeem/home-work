@@ -40,13 +40,13 @@
   display: block;
 }
 
-li {
+.select-box li {
   width: 100%;
   padding: 2px;
   text-align: center;
   color: #757575;
 }
 
-li:hover {
+.select-box li:hover {
   background: #c8c8c8;
 }
