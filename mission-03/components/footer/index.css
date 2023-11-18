@@ -1,6 +1,6 @@
 .footer {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
   background: var(--bg-black);
 }
 
@@ -10,7 +10,7 @@
   margin: 3.125em 9.375em;
 }
 
-.footer-wrapper em {
+.cs-number {
   color: var(--font-gray-1);
   font-size: 20px;
   font-style: normal;
@@ -24,8 +24,6 @@
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 3.75em;
   grid-row-gap: 1em;
-  inline-size: 62.5em;
-  block-size: 7.75em;
   margin-block-start: 3.125em;
   color: var(--font-gray-2);
 }
@@ -53,5 +51,30 @@
   color: var(--font-gray-3);
 }
 
+@media (max-width: 1055px) {
+  .grid-link {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .address {
+    font-size: 14px;
+  }
+}
+
 @media (max-width: 768px) {
+  .footer-wrapper {
+    margin: 40px 25px;
+  }
+  .grid-link {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cs-number {
+    font-size: 20px;
+    line-height: 1.5;
+
+    & span {
+      display: block;
+    }
+  }
 }
