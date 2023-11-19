@@ -5,20 +5,19 @@ header {
 .header-box {
   display: flex;
   /* inline-size: 105em; */
-  block-size: 6.25em;
   justify-content: space-between;
   align-items: center;
+  margin-top: 1em;
 }
 
 .netflix-logo {
   inline-size: 8.75em;
-  block-size: 2.375em;
 }
 
 .select-signin-box {
   display: flex;
   flex-flow: row nowrap;
-  align-items: end;
+  align-items: center;
 }
 
 .signin-btn {
