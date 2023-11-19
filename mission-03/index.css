@@ -1,11 +1,68 @@
 body {
   font-family: "Spoqa Han Sans Neo", "sans-serif";
-  block-size: 100vh;
 }
 
 .netflix-container {
-  block-size: 100%;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, #000 100%),
-    url(./assets/bg_large.svg), lightgray 500% / cover no-repeat;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, #000 50%),
+    url(./assets/bg_large.svg), lightgray 50% / cover no-repeat;
   color: var(--font-white);
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.register-box {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  row-gap: 28px;
+  margin: 100px 0;
+}
+
+.strong-text {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.03px;
+}
+
+.footer {
+  border-top: 1px solid var(--font-gray-2);
+}
+
+@media (max-width: 768px) {
+  .netflix-container {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, #000 30%),
+      url(./assets/bg_large.svg), lightgray 50% / cover no-repeat;
+    color: var(--font-white);
+  }
+
+  .register-box {
+    row-gap: 24px;
+  }
+
+  .strong-text {
+    font-size: 34px;
+  }
+
+  .cancel {
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: -0.009px;
+
+    & span {
+      display: block;
+    }
+  }
 }
