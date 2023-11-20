@@ -10,17 +10,16 @@
       type="text/css"
     />
     <link rel="stylesheet" href="../../styles/style.css" />
+    <script src="./form.js" defer></script>
   </head>
   <body>
     <div class="form-container">
       <main class="main">
         <div class="register-form">
-          <input
-            type="email"
-            class="email-input"
-            placeholder="이메일 주소"
-            required
-          />
+          <form action="/" class="email-form">
+            <input type="email" class="email-input " id="userEmail" required />
+            <label for="userEmail" class="email-label">이메일 주소</label>
+          </form>
           <a href="/" class="free-btn"
             >30일 무료 이용
             <svg
@@ -40,6 +39,7 @@
             </svg>
           </a>
         </div>
+        <div class="error-message"></div>
       </main>
     </div>
   </body>

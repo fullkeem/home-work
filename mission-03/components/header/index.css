@@ -11,13 +11,13 @@ header {
 }
 
 .netflix-logo {
-  inline-size: 8.75em;
+  inline-size: 8.75;
+  block-size: 2.5em;
 }
 
 .select-signin-box {
   display: flex;
   flex-flow: row nowrap;
-  align-items: center;
 }
 
 .signin-btn {
